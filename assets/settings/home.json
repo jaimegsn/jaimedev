@@ -1,0 +1,17 @@
+{
+  "AboutMe": "",
+  "Activities": [
+    {
+      "Activity": "Desenvolvimento web",
+      "Description": "Faço site :)",
+      "LogoIMG": "caminho/caminho",
+      "ALT": "Descrição da Imagem"
+    },
+    {
+      "Activity": "Jogador Nato",
+      "Description": "Jogo Bola",
+      "LogoIMG": "none",
+      "ALT": "none"
+    }
+  ]
+}
