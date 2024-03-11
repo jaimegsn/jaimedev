@@ -2,7 +2,7 @@ import data from "../settings/navbarlist-and-content.json" assert { type: "json"
 
 let socialHtmlList = "";
 data.navbarlist.forEach((e) => {
-  if (e[1] == "home") {
+  if (e[1] == "about") {
     socialHtmlList += `
     <li class="navbar-item">
         <button class="navbar-link  active" data-nav-link>${e[0]}</button>

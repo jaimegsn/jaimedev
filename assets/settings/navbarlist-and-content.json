@@ -1,13 +1,57 @@
 {
   "navbarlist": [
     [
-      "Sobre mim",
-      "home",
+      "Sobre",
+      "about",
       {
-        "": ""
+        "AboutMe": "Textão",
+        "Activities": [
+          "Minhas Atividades",
+          {
+            "Activity": "Desenvolvimento web",
+            "Description": "Faço site :)",
+            "LogoIMG": "./assets/images/icon-dev.svg",
+            "ALTDesc": "Descrição da Imagem"
+          },
+          {
+            "Activity": "Jogador Nato",
+            "Description": "Jogo Bola",
+            "LogoIMG": "none",
+            "ALTDesc": "none"
+          }
+        ]
       }
     ],
-    ["Experiência", "resume"],
+
+    [
+      "Experiencia",
+      "resume",
+      {
+        "Education": [
+          "Educação",
+          {
+            "School": "UFRN",
+            "FieldOfStudy": "Sistemas de Informação",
+            "StartYear": "2019",
+            "EndYear": "Presente",
+            "Description": "Curso de Bacharelado em Sistemas de Informação"
+          }
+        ],
+
+        "Experience": [
+          "Experiência",
+          {
+            "Company": "UFRN",
+            "Position": "Desenvolvedor Web",
+            "StartYear": "2019",
+            "EndYear": "Presente",
+            "Description": "Desenvolvedor Web"
+          }
+        ],
+        "Skills": ["Habilidades", ["Java", "Spring Boot", "JavaScript"]]
+      }
+    ],
+
     ["Projetos", "portfolio"],
     ["Artigos", "blog"],
     ["Livros", "portfolio"],
