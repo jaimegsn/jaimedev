@@ -1,6 +1,7 @@
 {
-  "AboutMe": "",
+  "AboutMe": ["Sobre mim", "textão"],
   "Activities": [
+    "Minhas Atividades",
     {
       "Activity": "Desenvolvimento web",
       "Description": "Faço site :)",

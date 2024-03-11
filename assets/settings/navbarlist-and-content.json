@@ -1,0 +1,16 @@
+{
+  "navbarlist": [
+    [
+      "Sobre mim",
+      "home",
+      {
+        "": ""
+      }
+    ],
+    ["Experiência", "resume"],
+    ["Projetos", "portfolio"],
+    ["Artigos", "blog"],
+    ["Livros", "portfolio"],
+    ["Contato", "contact"]
+  ]
+}
