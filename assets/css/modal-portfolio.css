@@ -1,0 +1,107 @@
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para destacar o modal */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: var(--onyx); /* Cor principal do modal */
+  border-radius: 12px; /* Bordas mais arredondadas */
+  padding: 25px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-4); /* Sombra para dar profundidade */
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.95);
+}
+
+/* Close Button */
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--orange-yellow-crayola); /* Cor vibrante para o botão de fechar */
+  color: var(--smoky-black); /* Cor do texto */
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: var(--fw-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-1);
+}
+
+.modal .close:hover {
+  background: var(--vegas-gold); /* Feedback visual ao passar o mouse */
+}
+
+/* Project Image */
+.project-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-2); /* Sombra suave na imagem */
+}
+
+/* Responsive iframe */
+.modal-content iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-2);
+}
+
+/* Fade-in effect for modal */
+.modal-content {
+  animation: fadeInModal 0.3s ease-in-out forwards;
+}
+
+/* Título do Modal */
+.modal-content h3 {
+  color: var(--white-1); /* Define a cor do título como branco */
+}
+
+/* Link do GitHub */
+.modal-content a {
+  color: var(--orange-yellow-crayola); /* Cor que contrasta bem com fundo preto/cinza */
+  text-decoration: underline; /* Adiciona sublinhado para destacar como link */
+  font-weight: var(--fw-500); /* Torna o link mais evidente */
+  transition: color var(--transition-1); /* Suave transição de cor ao passar o mouse */
+}
+
+.modal-content a:hover {
+  color: var(--vegas-gold); /* Muda a cor ao passar o mouse */
+}
+
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
