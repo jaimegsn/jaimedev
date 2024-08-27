@@ -16,7 +16,7 @@ const portfolioItems = [
     article: "",
   },
 ];
-
+//
 //-------------------------------------------
 
 // Função para obter categorias únicas
