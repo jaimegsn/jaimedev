@@ -12,7 +12,7 @@ const portfolioItems = [
     - User Service: manages user accounts, JWT authentication and authorization<br>`,
 
     github: "https://github.com/jaimegsn/gerenciamento-tasks",
-    video: "",
+    video: "https://www.youtube.com/embed/6-gBibK9ZHY?si=7vqHPsAxr0fD8Qq_",
     article: "",
   },
 ];
@@ -77,6 +77,14 @@ function openModal(index) {
     ? `<a href="${item.video}" target="_blank">Video explanation link</a>`
     : "";
 
+  const videoFrame = item.video
+    ? `
+  <iframe width="560" height="315" src="${item.video}" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>`
+    : "";
+
   // Verifica se o link do artigo está presente
   const articleLink = item.article
     ? `<a href="${item.article}" target="_blank">Article explanation link</a>`
@@ -86,7 +94,7 @@ function openModal(index) {
         <button class="close">&times;</button>
         <h3>${item.title} <a href="${item.github}" target="_blank">GitHub Link</a><br></h3>
         <p>${item.description}</p>
-        ${videoLink}
+        ${videoFrame}
         ${articleLink}
       `;
 
